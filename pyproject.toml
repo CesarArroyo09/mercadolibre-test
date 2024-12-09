@@ -5,5 +5,22 @@ description = "Pruebta técnica de Mercado Libre para Data Science"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "ipykernel>=6.29.5",
+    "torch>=2.5.1",
     "transformers>=4.47.0",
 ]
+
+[project.optional-dependencies]
+optional = [
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu", marker = "platform_system != 'Darwin'"},
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
