@@ -12,6 +12,7 @@ dependencies = [
 
 [project.optional-dependencies]
 optional = [
+    "ipywidgets>=8.1.5",
     "tqdm>=4.67.1",
 ]
 
