@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "Pruebta técnica de Mercado Libre para Data Science"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "transformers>=4.47.0",
+]
